@@ -1,8 +1,8 @@
 # Write your code here.
 
 def line(deli)
-    output = "The line is currently:"
     if deli.any?
+        output ||= "The line is currently:"
         deli.each_with_index { |c, i| output += " #{i + 1}. #{c}"}
     else
         output = "The line is currently empty."
